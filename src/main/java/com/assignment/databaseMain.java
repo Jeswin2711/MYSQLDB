@@ -31,9 +31,15 @@ public class databaseMain
             /*
             line to create a Sql Query
              */
-            statement.execute("create database payroll_services");
+            //query to create a payroll_service database
+            statement.execute("create database payroll_service");
+            //query to show databases
             statement.execute("show databases");
-            statement.execute("use payroll_services");
+            //query to use the database
+            statement.execute("use payroll_service");
+            //query to create a table
+            statement.execute("create table employee_payroll (id int primary key auto_increment, name varchar(20) not null, salary bigint not null, start_date Date not null)");
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

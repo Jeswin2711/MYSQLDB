@@ -3,7 +3,7 @@ package com.assignment;
 import java.lang.invoke.StringConcatFactory;
 import java.sql.*;
 
-public class databaseMain
+public class DatabaseMain
 {
     public static void main(String[] args) {
         System.out.println("Welcome to JDBC Program");
